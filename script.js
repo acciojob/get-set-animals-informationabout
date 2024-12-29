@@ -47,7 +47,23 @@ window.Animal = Animal;
 window.Dog = Dog;
 window.Cat = Cat;
 
+// Function to create a Dog object and display its behavior
+function createDog() {
+    const myDog = new Dog("Golden Retriever");
+    myDog.makeSound();
+    myDog.bark();
+    const message = `The ${myDog.species} makes a sound. It says "woof".`;
+    document.getElementById("output").textContent = message;
+}
 
+// Function to create a Cat object and display its behavior
+function createCat() {
+    const myCat = new Cat("Siamese");
+    myCat.makeSound();
+    myCat.purr();
+    const message = `The ${myCat.species} makes a sound. It says "purr".`;
+    document.getElementById("output").textContent = message;
+}
 
 
 
