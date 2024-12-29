@@ -16,7 +16,7 @@ class Animal {
 
     // Method to make a sound
     makeSound() {
-        console.log(`${this.species} makes a sound`);
+        console.log(`The ${this.species} makes a sound`);
     }
 }
 
@@ -47,7 +47,6 @@ window.Animal = Animal;
 window.Dog = Dog;
 window.Cat = Cat;
 
-// Function to create a Dog object and display its behavior
 function createDog() {
     const myDog = new Dog("Golden Retriever");
     myDog.makeSound();
@@ -64,6 +63,7 @@ function createCat() {
     const message = `The ${myCat.species} makes a sound. It says "purr".`;
     document.getElementById("output").textContent = message;
 }
+
 
 
 
